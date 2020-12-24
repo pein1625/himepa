@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./vendor/daterangepicker/daterangepicker.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./vendor/highchart/highcharts.js" defer="defer"></script>
+        <script src="./vendor/daterangepicker/moment.min.js" defer="defer"></script>
+        <script src="./vendor/daterangepicker/daterangepicker.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+        <script src="./js/chart.js" defer="defer"></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="QH5eTQTz"></script>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__inner"><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                    <div class="header__elements">
+                        <ul class="h-nav">
+                            <li class="h-nav__item"><a class="h-nav__link" href="#!"><img src="./images/icon-comment.png" alt="" /></a></li>
+                            <li class="h-nav__item"><a class="h-nav__link" href="#!"><img src="./images/icon-bell.png" alt="" /><span class="h-nav__num">4</span></a>
+                                <div class="h-nav__menu"><a class="h-notification media" href="#!">
+                                        <div class="media-body">
+                                            <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                            <div class="h-notification__time">23/06/2020</div>
+                                        </div>
+                                    </a><a class="h-notification media" href="#!">
+                                        <div class="media-body">
+                                            <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                            <div class="h-notification__time">23/06/2020</div>
+                                        </div>
+                                    </a><a class="h-notification media" href="#!">
+                                        <div class="media-body">
+                                            <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                            <div class="h-notification__time">23/06/2020</div>
+                                        </div>
+                                    </a><a class="h-notification media" href="#!">
+                                        <div class="media-body">
+                                            <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                            <div class="h-notification__time">23/06/2020</div>
+                                        </div>
+                                    </a><a class="h-nav__viewall" href="./account-notification.html">Xem tất cả thông báo</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <section class="navbar js-navbar">
+                            <div class="navbar__backdrop js-navbar-toggle"></div>
+                            <div class="navbar__wrapper">
+                                <div class="navbar__header"><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                    <button class="navbar-toggle js-navbar-toggle ml-auto"><span></span><span></span><span></span></button>
+                                </div>
+                                <div class="navbar__body">
+                                    <nav class="h-user"><a class="h-user__toggle" href="#!">
+                                            <div class="h-user__avatar"><img src="./images/avatar.png" alt="" /></div><span class="h-user__name mr-3">HIMEPA</span><i class="fa fa-2x fa-angle-down ml-auto"></i>
+                                        </a>
+                                        <div class="h-user__dropdown"><a class="h-user__item" href="#!"><i class="fa fa-user fa-fw mr-2"></i>Profile</a><a class="h-user__item" href="#!"><i class="fa fa-power-off fa-fw mr-2"></i>Log out</a></div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </section>
+                        <button class="navbar-toggle d-lg-none js-navbar-toggle ml-20"><span></span><span></span><span></span></button>
+                    </div>
+                </div>
+            </header>
+            <div class="page__main">
+                <div class="page__sidebar">
+                    <ul class="menu">
+                        <li class="menu-item"><a class="menu-link active" href="#!"><img src="./images/icon-home.png" alt="" /><span class="menu-text">ダッシュボード</span></a></li>
+                        <li class="menu-item"><a class="menu-link" href="./result.html"><img src="./images/icon-bar-chart.png" alt="" /><span class="menu-text">解析結果</span></a></li>
+                        <li class="menu-item"><a class="menu-link" href="./file.html"><img src="./images/icon-download.png" alt="" /><span class="menu-text">ファイル管理</span><span class="menu-number">16</span></a></li>
+                        <li class="menu-item"><a class="menu-link" href="./keywords.html"><img src="./images/icon-file-text.png" alt="" /><span class="menu-text">キーワード管理</span></a></li>
+                        <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-comment.png" alt="" /><span class="menu-text">メッセージ</span></a></li>
+                        <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-help.png" alt="" /><span class="menu-text">ヘルプ</span></a></li>
+                        <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-cog.png" alt="" /><span class="menu-text">設定</span></a></li>
+                    </ul>
+                </div>
+                <div class="page__content">
+                    <!-- main content-->
+                    <!-- page header-->
+                    <div class="page__header">
+                        <div class="page__elements">
+                            <div class="calendar-type btn-group mr-sm-20 mb-10 mb-sm-0"><a class="btn" href="#!">Days</a><a class="btn" href="#!">Weeks</a><a class="btn active" href="#!">Months</a></div>
+                            <label class="m-datepicker"><img src="./images/icon-calendar.png" alt="" />
+                                <input class="js-daterangepicker" type="text" value="" size="1" />
+                            </label>
+                        </div>
+                    </div>
+                    <!-- widgets-->
+                    <div class="widgets">
+                        <div class="widgets__item">
+                            <div class="widgets__title">未チェック</div>
+                            <div class="widgets__number">1</div>
+                            <div class="widgets__info"><span class="text-danger">1.3%</span><img src="./images/icon-arrow-down-red.png" alt="" /><small class="text-muted">than last month</small></div><img class="widgets__img" src="./images/widget-1.png" alt="" />
+                        </div>
+                        <div class="widgets__item">
+                            <div class="widgets__title">高リスク結果</div>
+                            <div class="widgets__number">2</div>
+                            <div class="widgets__info"><span class="text-danger">1.2%</span><img src="./images/icon-arrow-down-red.png" alt="" /><small class="text-muted">than last month</small></div><img class="widgets__img" src="./images/widget-2.png" alt="" />
+                        </div>
+                        <div class="widgets__item">
+                            <div class="widgets__title">検知総数</div>
+                            <div class="widgets__number">4</div>
+                            <div class="widgets__info"><span class="text-success">2.3%</span><img src="./images/icon-arrow-up-green.png" alt="" /><small class="text-muted">than last month</small></div><img class="widgets__img" src="./images/widget-3.png" alt="" />
+                        </div>
+                    </div>
+                    <!-- table-->
+                    <section class="section">
+                        <div class="section__header">
+                            <h2 class="section__title">概要</h2>
+                            <div class="section__elements"><a class="section__btn" href="#!">Export Data</a></div>
+                        </div>
+                        <table class="table table-borderless m-table">
+                            <thead>
+                                <tr>
+                                    <th>ファイル</th>
+                                    <th>発見日</th>
+                                    <th>チェック</th>
+                                    <th>投稿日</th>
+                                    <th>URL</th>
+                                    <th>本人確率</th>
+                                    <th width="1%"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="m-user">
+                                            <!-- For mobile state dot-->
+                                            <div class="m-user__dot" style="background-color: #38AFFB"></div>
+                                            <div class="m-user__avatar"><img src="./images/avatar-1.png" alt="" /></div>
+                                            <div class="m-user__name">A子</div>
+                                        </div>
+                                    </td>
+                                    <td>20/03/2020</td>
+                                    <td>
+                                        <div class="m-state"><span class="m-state__dot" style="background-color: #38AFFB"></span><span class="m-state__text">チェック済</span></div>
+                                    </td>
+                                    <td>20/03/2020</td>
+                                    <td><a class="m-table__link" href="#!">https://jp.pornhub.com/view</a></td>
+                                    <td>
+                                        <div class="m-progress">
+                                            <div class="m-progress__number">20%</div>
+                                            <div class="m-progress__line">
+                                                <div class="m-progress__inner" style="width: 20%; background-color: #38AFFB;"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="m-dropdown"><a class="m-dropdown__toggle" href="#!"><span></span><span></span><span></span></a>
+                                            <div class="m-dropdown__menu"><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-pencil-square-o mr-2"></i>Edit</a><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-trash-o mr-2"></i>Delete</a></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="m-user">
+                                            <div class="m-user__dot" style="background-color: #ff8b27"></div>
+                                            <div class="m-user__avatar"><img src="./images/avatar-2.png" alt="" /></div>
+                                            <div class="m-user__name">A子</div>
+                                        </div>
+                                    </td>
+                                    <td>20/03/2020</td>
+                                    <td>
+                                        <div class="m-state"><span class="m-state__dot" style="background-color: #ff8b27"></span><span class="m-state__text">チェック済</span></div>
+                                    </td>
+                                    <td>20/03/2020</td>
+                                    <td><a href="#!">http://jp.xvideos.com</a></td>
+                                    <td>
+                                        <div class="m-progress">
+                                            <div class="m-progress__number">80%</div>
+                                            <div class="m-progress__line">
+                                                <div class="m-progress__inner" style="width: 80%; background-color: #F91130;"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="m-dropdown"><a class="m-dropdown__toggle" href="#!"><span></span><span></span><span></span></a>
+                                            <div class="m-dropdown__menu"><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-pencil-square-o mr-2"></i>Edit</a><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-trash-o mr-2"></i>Delete</a></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="m-user">
+                                            <!-- For mobile state dot-->
+                                            <div class="m-user__dot" style="background-color: #38AFFB"></div>
+                                            <div class="m-user__avatar"><img src="./images/avatar-1.png" alt="" /></div>
+                                            <div class="m-user__name">A子</div>
+                                        </div>
+                                    </td>
+                                    <td>20/03/2020</td>
+                                    <td>
+                                        <div class="m-state"><span class="m-state__dot" style="background-color: #38AFFB"></span><span class="m-state__text">チェック済</span></div>
+                                    </td>
+                                    <td>20/03/2020</td>
+                                    <td><a class="m-table__link" href="#!">https://jp.pornhub.com/view</a></td>
+                                    <td>
+                                        <div class="m-progress">
+                                            <div class="m-progress__number">20%</div>
+                                            <div class="m-progress__line">
+                                                <div class="m-progress__inner" style="width: 20%; background-color: #38AFFB;"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="m-dropdown"><a class="m-dropdown__toggle" href="#!"><span></span><span></span><span></span></a>
+                                            <div class="m-dropdown__menu"><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-pencil-square-o mr-2"></i>Edit</a><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-trash-o mr-2"></i>Delete</a></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="m-user">
+                                            <div class="m-user__dot" style="background-color: #ff8b27"></div>
+                                            <div class="m-user__avatar"><img src="./images/avatar-2.png" alt="" /></div>
+                                            <div class="m-user__name">A子</div>
+                                        </div>
+                                    </td>
+                                    <td>20/03/2020</td>
+                                    <td>
+                                        <div class="m-state"><span class="m-state__dot" style="background-color: #ff8b27"></span><span class="m-state__text">チェック済</span></div>
+                                    </td>
+                                    <td>20/03/2020</td>
+                                    <td><a href="#!">http://jp.xvideos.com</a></td>
+                                    <td>
+                                        <div class="m-progress">
+                                            <div class="m-progress__number">80%</div>
+                                            <div class="m-progress__line">
+                                                <div class="m-progress__inner" style="width: 80%; background-color: #F91130;"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="m-dropdown"><a class="m-dropdown__toggle" href="#!"><span></span><span></span><span></span></a>
+                                            <div class="m-dropdown__menu"><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-pencil-square-o mr-2"></i>Edit</a><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-trash-o mr-2"></i>Delete</a></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="m-user">
+                                            <!-- For mobile state dot-->
+                                            <div class="m-user__dot" style="background-color: #38AFFB"></div>
+                                            <div class="m-user__avatar"><img src="./images/avatar-1.png" alt="" /></div>
+                                            <div class="m-user__name">A子</div>
+                                        </div>
+                                    </td>
+                                    <td>20/03/2020</td>
+                                    <td>
+                                        <div class="m-state"><span class="m-state__dot" style="background-color: #38AFFB"></span><span class="m-state__text">チェック済</span></div>
+                                    </td>
+                                    <td>20/03/2020</td>
+                                    <td><a class="m-table__link" href="#!">https://jp.pornhub.com/view</a></td>
+                                    <td>
+                                        <div class="m-progress">
+                                            <div class="m-progress__number">20%</div>
+                                            <div class="m-progress__line">
+                                                <div class="m-progress__inner" style="width: 20%; background-color: #38AFFB;"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="m-dropdown"><a class="m-dropdown__toggle" href="#!"><span></span><span></span><span></span></a>
+                                            <div class="m-dropdown__menu"><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-pencil-square-o mr-2"></i>Edit</a><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-trash-o mr-2"></i>Delete</a></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="m-user">
+                                            <div class="m-user__dot" style="background-color: #ff8b27"></div>
+                                            <div class="m-user__avatar"><img src="./images/avatar-2.png" alt="" /></div>
+                                            <div class="m-user__name">A子</div>
+                                        </div>
+                                    </td>
+                                    <td>20/03/2020</td>
+                                    <td>
+                                        <div class="m-state"><span class="m-state__dot" style="background-color: #ff8b27"></span><span class="m-state__text">チェック済</span></div>
+                                    </td>
+                                    <td>20/03/2020</td>
+                                    <td><a href="#!">http://jp.xvideos.com</a></td>
+                                    <td>
+                                        <div class="m-progress">
+                                            <div class="m-progress__number">80%</div>
+                                            <div class="m-progress__line">
+                                                <div class="m-progress__inner" style="width: 80%; background-color: #F91130;"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="m-dropdown"><a class="m-dropdown__toggle" href="#!"><span></span><span></span><span></span></a>
+                                            <div class="m-dropdown__menu"><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-pencil-square-o mr-2"></i>Edit</a><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-trash-o mr-2"></i>Delete</a></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="m-user">
+                                            <!-- For mobile state dot-->
+                                            <div class="m-user__dot" style="background-color: #38AFFB"></div>
+                                            <div class="m-user__avatar"><img src="./images/avatar-1.png" alt="" /></div>
+                                            <div class="m-user__name">A子</div>
+                                        </div>
+                                    </td>
+                                    <td>20/03/2020</td>
+                                    <td>
+                                        <div class="m-state"><span class="m-state__dot" style="background-color: #38AFFB"></span><span class="m-state__text">チェック済</span></div>
+                                    </td>
+                                    <td>20/03/2020</td>
+                                    <td><a class="m-table__link" href="#!">https://jp.pornhub.com/view</a></td>
+                                    <td>
+                                        <div class="m-progress">
+                                            <div class="m-progress__number">20%</div>
+                                            <div class="m-progress__line">
+                                                <div class="m-progress__inner" style="width: 20%; background-color: #38AFFB;"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="m-dropdown"><a class="m-dropdown__toggle" href="#!"><span></span><span></span><span></span></a>
+                                            <div class="m-dropdown__menu"><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-pencil-square-o mr-2"></i>Edit</a><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-trash-o mr-2"></i>Delete</a></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="m-user">
+                                            <div class="m-user__dot" style="background-color: #ff8b27"></div>
+                                            <div class="m-user__avatar"><img src="./images/avatar-2.png" alt="" /></div>
+                                            <div class="m-user__name">A子</div>
+                                        </div>
+                                    </td>
+                                    <td>20/03/2020</td>
+                                    <td>
+                                        <div class="m-state"><span class="m-state__dot" style="background-color: #ff8b27"></span><span class="m-state__text">チェック済</span></div>
+                                    </td>
+                                    <td>20/03/2020</td>
+                                    <td><a href="#!">http://jp.xvideos.com</a></td>
+                                    <td>
+                                        <div class="m-progress">
+                                            <div class="m-progress__number">80%</div>
+                                            <div class="m-progress__line">
+                                                <div class="m-progress__inner" style="width: 80%; background-color: #F91130;"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="m-dropdown"><a class="m-dropdown__toggle" href="#!"><span></span><span></span><span></span></a>
+                                            <div class="m-dropdown__menu"><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-pencil-square-o mr-2"></i>Edit</a><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-trash-o mr-2"></i>Delete</a></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="section__body section__pagination mt-0">
+                            <ul class="pagination">
+                                <li class="page-item disabled"><a class="page-link" href="#!"><i class="fa fa-angle-left"></i></a></li>
+                                <li class="page-item active"><a class="page-link" href="#!">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#!">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#!"><i class="fa fa-angle-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

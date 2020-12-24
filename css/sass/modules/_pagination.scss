@@ -1,0 +1,48 @@
+.pagination {
+  margin-bottom: 0;
+
+  .page-item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .page-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color: $purple;
+    border-radius: 50% !important;
+    font-size: 15px;
+  }
+
+  .page-item.active .page-link {
+    background-color: $purple;
+    border-color: $purple;
+  }
+
+  @media (max-width: 1399px) {
+    .page-link {
+      width: 30px;
+      height: 30px;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .page-item {
+      &:not(:last-child) {
+        margin-right: 4px;
+      }
+    }
+
+    .page-link {
+      width: 24px;
+      height: 24px;
+      font-size: 13px;
+    }
+  }
+}

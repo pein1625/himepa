@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./vendor/daterangepicker/daterangepicker.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./vendor/highchart/highcharts.js" defer="defer"></script>
+        <script src="./vendor/daterangepicker/moment.min.js" defer="defer"></script>
+        <script src="./vendor/daterangepicker/daterangepicker.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+        <script src="./js/chart.js" defer="defer"></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="QH5eTQTz"></script>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__inner"><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                    <div class="header__elements">
+                        <ul class="h-nav">
+                            <li class="h-nav__item"><a class="h-nav__link" href="#!"><img src="./images/icon-comment.png" alt="" /></a></li>
+                            <li class="h-nav__item"><a class="h-nav__link" href="#!"><img src="./images/icon-bell.png" alt="" /><span class="h-nav__num">4</span></a>
+                                <div class="h-nav__menu"><a class="h-notification media" href="#!">
+                                        <div class="media-body">
+                                            <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                            <div class="h-notification__time">23/06/2020</div>
+                                        </div>
+                                    </a><a class="h-notification media" href="#!">
+                                        <div class="media-body">
+                                            <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                            <div class="h-notification__time">23/06/2020</div>
+                                        </div>
+                                    </a><a class="h-notification media" href="#!">
+                                        <div class="media-body">
+                                            <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                            <div class="h-notification__time">23/06/2020</div>
+                                        </div>
+                                    </a><a class="h-notification media" href="#!">
+                                        <div class="media-body">
+                                            <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                            <div class="h-notification__time">23/06/2020</div>
+                                        </div>
+                                    </a><a class="h-nav__viewall" href="./account-notification.html">Xem tất cả thông báo</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <section class="navbar js-navbar">
+                            <div class="navbar__backdrop js-navbar-toggle"></div>
+                            <div class="navbar__wrapper">
+                                <div class="navbar__header"><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                    <button class="navbar-toggle js-navbar-toggle ml-auto"><span></span><span></span><span></span></button>
+                                </div>
+                                <div class="navbar__body">
+                                    <nav class="h-user"><a class="h-user__toggle" href="#!">
+                                            <div class="h-user__avatar"><img src="./images/avatar.png" alt="" /></div><span class="h-user__name mr-3">HIMEPA</span><i class="fa fa-2x fa-angle-down ml-auto"></i>
+                                        </a>
+                                        <div class="h-user__dropdown"><a class="h-user__item" href="#!"><i class="fa fa-user fa-fw mr-2"></i>Profile</a><a class="h-user__item" href="#!"><i class="fa fa-power-off fa-fw mr-2"></i>Log out</a></div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </section>
+                        <button class="navbar-toggle d-lg-none js-navbar-toggle ml-20"><span></span><span></span><span></span></button>
+                    </div>
+                </div>
+            </header>
+            <div class="page__main">
+                <div class="page__sidebar">
+                    <ul class="menu">
+                        <li class="menu-item"><a class="menu-link active" href="#!"><img src="./images/icon-home.png" alt="" /><span class="menu-text">ダッシュボード</span></a></li>
+                        <li class="menu-item"><a class="menu-link" href="./result.html"><img src="./images/icon-bar-chart.png" alt="" /><span class="menu-text">解析結果</span></a></li>
+                        <li class="menu-item"><a class="menu-link" href="./file.html"><img src="./images/icon-download.png" alt="" /><span class="menu-text">ファイル管理</span><span class="menu-number">16</span></a></li>
+                        <li class="menu-item"><a class="menu-link" href="./keywords.html"><img src="./images/icon-file-text.png" alt="" /><span class="menu-text">キーワード管理</span></a></li>
+                        <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-comment.png" alt="" /><span class="menu-text">メッセージ</span></a></li>
+                        <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-help.png" alt="" /><span class="menu-text">ヘルプ</span></a></li>
+                        <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-cog.png" alt="" /><span class="menu-text">設定</span></a></li>
+                    </ul>
+                </div>
+                <div class="page__content">
+                    <!-- main content-->
+                    <!-- page header-->
+                    <div class="page__header">
+                        <div class="page__elements">
+                            <div class="calendar-type btn-group mr-sm-20 mb-10 mb-sm-0"><a class="btn" href="#!">Days</a><a class="btn" href="#!">Weeks</a><a class="btn active" href="#!">Months</a></div>
+                            <label class="m-datepicker"><img src="./images/icon-calendar.png" alt="" />
+                                <input class="js-daterangepicker" type="text" value="" size="1" />
+                            </label>
+                        </div>
+                    </div>
+                    <section class="section">
+                        <div class="section__body">
+                            <div class="card-grid">
+                                <div class="card-grid__col">
+                                    <div class="card-1"><a class="card-1__frame" href="./file-2.html"><img src="./images/avatar-placeholder.png" alt="" /></a>
+                                        <div class="card-1__footer">
+                                            <div class="card-1__name">A子</div>
+                                            <div class="m-dropdown card-1__dropdown"><a class="m-dropdown__toggle" href="#!"><span></span><span></span><span></span></a>
+                                                <div class="m-dropdown__menu"><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-pencil-square-o mr-2"></i>Edit</a><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-trash-o mr-2"></i>Delete</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-grid__col">
+                                    <div class="card-1"><a class="card-1__frame" href="./file-2.html"><img src="./images/avatar-placeholder.png" alt="" /></a>
+                                        <div class="card-1__footer">
+                                            <div class="card-1__name">B子</div>
+                                            <div class="m-dropdown card-1__dropdown"><a class="m-dropdown__toggle" href="#!"><span></span><span></span><span></span></a>
+                                                <div class="m-dropdown__menu"><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-pencil-square-o mr-2"></i>Edit</a><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-trash-o mr-2"></i>Delete</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-grid__col">
+                                    <div class="card-1"><a class="card-1__frame" href="./file-2.html"><img src="./images/avatar-placeholder.png" alt="" /></a>
+                                        <div class="card-1__footer">
+                                            <div class="card-1__name">C子</div>
+                                            <div class="m-dropdown card-1__dropdown"><a class="m-dropdown__toggle" href="#!"><span></span><span></span><span></span></a>
+                                                <div class="m-dropdown__menu"><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-pencil-square-o mr-2"></i>Edit</a><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-trash-o mr-2"></i>Delete</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-grid__col">
+                                    <div class="card-1"><a class="card-1__frame" href="./file-2.html"><img src="./images/avatar-placeholder.png" alt="" /></a>
+                                        <div class="card-1__footer">
+                                            <div class="card-1__name">C子</div>
+                                            <div class="m-dropdown card-1__dropdown"><a class="m-dropdown__toggle" href="#!"><span></span><span></span><span></span></a>
+                                                <div class="m-dropdown__menu"><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-pencil-square-o mr-2"></i>Edit</a><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-trash-o mr-2"></i>Delete</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-grid__col">
+                                    <div class="card-1"><a class="card-1__frame" href="./file-2.html"><img src="./images/avatar-placeholder.png" alt="" /></a>
+                                        <div class="card-1__footer">
+                                            <div class="card-1__name">D子</div>
+                                            <div class="m-dropdown card-1__dropdown"><a class="m-dropdown__toggle" href="#!"><span></span><span></span><span></span></a>
+                                                <div class="m-dropdown__menu"><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-pencil-square-o mr-2"></i>Edit</a><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-trash-o mr-2"></i>Delete</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-grid__col">
+                                    <div class="card-1"><a class="card-1__frame" href="./file-2.html"><img src="./images/avatar-placeholder.png" alt="" /></a>
+                                        <div class="card-1__footer">
+                                            <div class="card-1__name">E子</div>
+                                            <div class="m-dropdown card-1__dropdown"><a class="m-dropdown__toggle" href="#!"><span></span><span></span><span></span></a>
+                                                <div class="m-dropdown__menu"><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-pencil-square-o mr-2"></i>Edit</a><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-trash-o mr-2"></i>Delete</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-grid__col">
+                                    <div class="card-1"><a class="card-1__frame" href="./file-2.html"><img src="./images/avatar-placeholder.png" alt="" /></a>
+                                        <div class="card-1__footer">
+                                            <div class="card-1__name">F子</div>
+                                            <div class="m-dropdown card-1__dropdown"><a class="m-dropdown__toggle" href="#!"><span></span><span></span><span></span></a>
+                                                <div class="m-dropdown__menu"><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-pencil-square-o mr-2"></i>Edit</a><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-trash-o mr-2"></i>Delete</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-grid__col">
+                                    <div class="card-1"><a class="card-1__frame" href="./file-2.html"><img src="./images/avatar-placeholder.png" alt="" /></a>
+                                        <div class="card-1__footer">
+                                            <div class="card-1__name">F子</div>
+                                            <div class="m-dropdown card-1__dropdown"><a class="m-dropdown__toggle" href="#!"><span></span><span></span><span></span></a>
+                                                <div class="m-dropdown__menu"><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-pencil-square-o mr-2"></i>Edit</a><a class="m-dropdown__item" href="#!"><i class="fa fa-fw fa-trash-o mr-2"></i>Delete</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav class="section__pagination">
+                                <ul class="pagination">
+                                    <li class="page-item disabled"><a class="page-link" href="#!"><i class="fa fa-angle-left"></i></a></li>
+                                    <li class="page-item active"><a class="page-link" href="#!">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#!">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#!"><i class="fa fa-angle-right"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
