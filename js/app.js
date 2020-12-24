@@ -198,9 +198,13 @@ $(function () {
 
     e.preventDefault();
 
-    $menu.fadeToggle("fast");
-
-    $(".h-nav__menu").not($menu).fadeOut("fast");
+    if ($(window).width() < 1200) {
+      $menu.slideToggle();
+      $(".h-nav__menu").not($menu).slideUp();
+    } else {
+      $menu.fadeToggle("fast");
+      $(".h-nav__menu").not($menu).fadeOut("fast");
+    }
   });
 
   $(".h-nav__menu").on("click", function (e) {
@@ -208,6 +212,7 @@ $(function () {
   });
 
   $("html, body").on("click", function () {
+    if ($(window).width() < 1200) return;
     $(".h-nav__menu").fadeOut("fast");
   });
 });
