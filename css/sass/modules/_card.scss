@@ -232,3 +232,84 @@
     }
   }
 }
+
+.dropzone {
+  max-width: 194px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .dz-button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .dz-default:last-child .dz-button {
+    &:last-child {
+      display: block;
+      width: 100%;
+      height: auto;
+      position: relative;
+      opacity: 1;
+      background: url("../images/drag-and-drop.jpg");
+      border: 0;
+      text-indent: -999px;
+      overflow: hidden;
+      color: transparent;
+      padding: 0;
+      margin: 0;
+      font-size: 0;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-bottom: 150%;
+      }
+    }
+  }
+
+  .dz-details {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .dz-size {
+    margin-right: 10px;
+  }
+
+  .dz-success-mark,
+  .dz-error-mark {
+    display: none;
+  }
+
+  .dz-image {
+    @include frame("rect", 150%);
+  }
+
+  .dz-error-message {
+    color: $danger;
+    margin-top: 10;
+  }
+}

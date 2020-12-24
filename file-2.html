@@ -12,6 +12,7 @@
         <script src="./vendor/highchart/highcharts.js" defer="defer"></script>
         <script src="./vendor/daterangepicker/moment.min.js" defer="defer"></script>
         <script src="./vendor/daterangepicker/daterangepicker.js" defer="defer"></script>
+        <script src="./vendor/dropzone/dropzone.js" defer="defer"></script>
         <script src="./js/app.js" defer="defer"></script>
         <script src="./js/chart.js" defer="defer"></script>
     </head>
@@ -97,7 +98,9 @@
                         <div class="section__body">
                             <div class="card-grid">
                                 <div class="card-grid__col">
-                                    <div class="card-2"><a class="card-2__frame" href="#!"><img src="./images/drag-and-drop.jpg" alt="" /></a></div>
+                                    <form class="dropzone" id="my-awesome-dropzone" action="/upload">
+                                        <input type="file" name="file" />
+                                    </form>
                                 </div>
                                 <div class="card-grid__col">
                                     <div class="card-2"><a class="card-2__frame" href="#!"><img src="./images/girl.jpg" alt="" /></a>
