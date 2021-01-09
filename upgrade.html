@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./vendor/daterangepicker/daterangepicker.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./vendor/highchart/highcharts.js" defer="defer"></script>
+        <script src="./vendor/daterangepicker/moment.min.js" defer="defer"></script>
+        <script src="./vendor/daterangepicker/daterangepicker.js" defer="defer"></script>
+        <script src="./vendor/dropzone/dropzone.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+        <script src="./js/chart.js" defer="defer"></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="QH5eTQTz"></script>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__inner"><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                    <div class="header__elements">
+                        <section class="navbar js-navbar">
+                            <div class="navbar__backdrop js-navbar-toggle"></div>
+                            <div class="navbar__wrapper">
+                                <div class="navbar__header"><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                    <button class="navbar-toggle js-navbar-toggle ml-auto"><span></span><span></span><span></span></button>
+                                </div>
+                                <div class="navbar__body">
+                                    <nav class="h-user"><a class="h-user__toggle" href="#!">
+                                            <div class="h-user__avatar"><img src="./images/avatar.png" alt="" /></div><span class="h-user__name mr-3">HIMEPA</span><i class="fa fa-2x fa-angle-down ml-auto"></i>
+                                        </a>
+                                        <div class="h-user__dropdown"><a class="h-user__item" href="#!"><i class="fa fa-user fa-fw mr-2"></i>Profile</a><a class="h-user__item" href="#!"><i class="fa fa-power-off fa-fw mr-2"></i>Log out</a></div>
+                                    </nav>
+                                    <ul class="h-nav">
+                                        <li class="h-nav__item"><a class="h-nav__link" href="#!"><img src="./images/icon-comment.png" alt="" />
+                                                <div class="h-nav__text">Comments</div>
+                                            </a>
+                                            <div class="h-nav__menu"><a class="h-notification media" href="#!">
+                                                    <div class="media-body">
+                                                        <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                                        <div class="h-notification__time">23/06/2020</div>
+                                                    </div>
+                                                </a><a class="h-notification media" href="#!">
+                                                    <div class="media-body">
+                                                        <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                                        <div class="h-notification__time">23/06/2020</div>
+                                                    </div>
+                                                </a><a class="h-notification media" href="#!">
+                                                    <div class="media-body">
+                                                        <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                                        <div class="h-notification__time">23/06/2020</div>
+                                                    </div>
+                                                </a><a class="h-notification media" href="#!">
+                                                    <div class="media-body">
+                                                        <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                                        <div class="h-notification__time">23/06/2020</div>
+                                                    </div>
+                                                </a><a class="h-nav__viewall" href="./account-notification.html">Xem tất cả bình luận</a>
+                                            </div>
+                                        </li>
+                                        <li class="h-nav__item"><a class="h-nav__link" href="#!"><img src="./images/icon-bell.png" alt="" />
+                                                <div class="h-nav__text">Notifications</div><span class="h-nav__num">4</span>
+                                            </a>
+                                            <div class="h-nav__menu"><a class="h-notification media" href="#!">
+                                                    <div class="media-body">
+                                                        <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                                        <div class="h-notification__time">23/06/2020</div>
+                                                    </div>
+                                                </a><a class="h-notification media" href="#!">
+                                                    <div class="media-body">
+                                                        <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                                        <div class="h-notification__time">23/06/2020</div>
+                                                    </div>
+                                                </a><a class="h-notification media" href="#!">
+                                                    <div class="media-body">
+                                                        <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                                        <div class="h-notification__time">23/06/2020</div>
+                                                    </div>
+                                                </a><a class="h-notification media" href="#!">
+                                                    <div class="media-body">
+                                                        <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                                        <div class="h-notification__time">23/06/2020</div>
+                                                    </div>
+                                                </a><a class="h-nav__viewall" href="./account-notification.html">Xem tất cả thông báo</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="menu">
+                                        <li class="menu-item"><a class="menu-link active" href="#!"><img src="./images/icon-home.png" alt="" /><span class="menu-text">ダッシュボード</span></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="./result.html"><img src="./images/icon-bar-chart.png" alt="" /><span class="menu-text">解析結果</span></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="./file.html"><img src="./images/icon-download.png" alt="" /><span class="menu-text">ファイル管理</span><span class="menu-number">16</span></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="./keywords.html"><img src="./images/icon-file-text.png" alt="" /><span class="menu-text">キーワード管理</span></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-comment.png" alt="" /><span class="menu-text">メッセージ</span></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-help.png" alt="" /><span class="menu-text">ヘルプ</span></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-cog.png" alt="" /><span class="menu-text">設定</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <button class="navbar-toggle d-lg-none js-navbar-toggle ml-20"><span></span><span></span><span></span></button>
+                    </div>
+                </div>
+            </header>
+            <div class="page__main">
+                <div class="page__sidebar"></div>
+                <div class="page__content">
+                    <!-- main content-->
+                    <!-- page header-->
+                    <div class="page__header">
+                        <div class="page__elements">
+                            <div class="calendar-type btn-group mr-sm-20 mb-10 mb-sm-0"><a class="btn" href="#!">Days</a><a class="btn" href="#!">Weeks</a><a class="btn active" href="#!">Months</a></div>
+                            <label class="m-datepicker"><img src="./images/icon-calendar.png" alt="" />
+                                <input class="js-daterangepicker" type="text" value="" size="1" />
+                            </label>
+                        </div>
+                    </div>
+                    <section class="section">
+                        <div class="section__header">
+                            <h2 class="section__title">アップグレード</h2>
+                        </div>
+                        <div class="section__body border-top">
+                            <div class="plan-pricing media">
+                                <div class="plan-pricing__left">
+                                    <div class="plan-pricing__label">利用人数</div>
+                                    <div class="plan-pricing__select">
+                                        <div class="n-select">
+                                            <div class="n-select__field">
+                                                <input type="radio" name="order" id="select-1-option-1" /><span>1人</span>
+                                                <input type="radio" name="order" id="select-1-option-2" /><span>2人</span>
+                                                <input type="radio" name="order" id="select-1-option-3" /><span>5人</span>
+                                                <input type="radio" name="order" id="select-1-option-4" /><span>10人</span>
+                                            </div>
+                                            <div class="n-select__dropdown">
+                                                <label class="n-select__label" for="select-1-option-1">1人</label>
+                                                <label class="n-select__label" for="select-1-option-2">2人</label>
+                                                <label class="n-select__label" for="select-1-option-3">5人</label>
+                                                <label class="n-select__label" for="select-1-option-4">10人</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="plan-pricing__price">¥<span>5,980</span><small>/月</small></div>
+                                </div>
+                                <div class="plan-pricing__content media-body">クレカ払いの場合は、ご利用期間経過後は、同じご利用期間での<span class="text-danger">自動更新</span>となります。<br>コンビニ払い・お振り込みの場合は、お支払い期限が過ぎますと、今までの<span class="text-danger">データは破棄</span>されます。</div>
+                            </div>
+                            <div class="plan-group">
+                                <div class="plan">
+                                    <div class="plan__name">1ヶ月決済コース</div>
+                                    <div class="plan__number">5,980</div>
+                                    <div class="plan__subname">1ヶ月決済コース</div>
+                                    <div class="plan__desc">クレカ払いの場合は、1ヶ月経過後は自動更新となります。</div>
+                                    <div class="plan__footer"><a class="plan__btn" href="#!">決済して始める</a></div>
+                                </div>
+                                <div class="plan plan--blue">
+                                    <div class="plan__name">3ヶ月決済コース</div>
+                                    <div class="plan__number">17,043</div>
+                                    <div class="plan__subname">3ヶ月ごとに決済</div>
+                                    <div class="plan__desc">クレカ払いの場合は、3ヶ月経過後は自動更新となります。</div>
+                                    <div class="plan__footer"><a class="plan__btn" href="#!">決済して始める</a></div>
+                                    <div class="plan__label">5% off</div>
+                                </div>
+                                <div class="plan plan--navy">
+                                    <div class="plan__name">6ヶ月決済コース</div>
+                                    <div class="plan__number">32,292</div>
+                                    <div class="plan__subname">6ヶ月ごとに決済</div>
+                                    <div class="plan__desc">クレカ払いの場合は、3ヶ月経過後は自動更新となります。</div>
+                                    <div class="plan__footer"><a class="plan__btn" href="#!">決済して始める</a></div>
+                                    <div class="plan__label">10% off</div>
+                                </div>
+                            </div>
+                            <div class="plan-desc">お支払い後の返金はできかねます。ご利用期間終了の24時間前までに設定画面より解約手続きされない限り、定期利用は同額、同期間で自動更新されます。解約手続きした場合、お支払い頂いた定期期間サイクルの終了と共に停止されます。詳しくはプライバシーポリシーをご確認ください。</div>
+                            <section class="s-calendar">
+                                <div class="s-calendar__title">お支払いスケジュール(コンビニ・振込)</div>
+                                <div class="s-calendar__content">
+                                    <div class="text-center"><img src="./images/calendar.png" alt=""></div>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="footer__wrapper"><a class="footer__btn active" href="#!"><img src="./images/icon-home-light.png" alt="" /></a><a class="footer__btn" href="#!"><img src="./images/icon-bar-chart-light.png" alt="" /></a><a class="footer__btn" href="#!"><img src="./images/icon-file-text-light.png" alt="" /></a><a class="footer__btn" href="#!"><img src="./images/icon-download-light.png" alt="" /></a></div>
+            </footer>
+        </div>
+    </body>
+</html>

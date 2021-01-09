@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./vendor/daterangepicker/daterangepicker.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./vendor/highchart/highcharts.js" defer="defer"></script>
+        <script src="./vendor/daterangepicker/moment.min.js" defer="defer"></script>
+        <script src="./vendor/daterangepicker/daterangepicker.js" defer="defer"></script>
+        <script src="./vendor/dropzone/dropzone.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+        <script src="./js/chart.js" defer="defer"></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="QH5eTQTz"></script>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__inner"><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                    <div class="header__elements">
+                        <section class="navbar js-navbar">
+                            <div class="navbar__backdrop js-navbar-toggle"></div>
+                            <div class="navbar__wrapper">
+                                <div class="navbar__header"><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                    <button class="navbar-toggle js-navbar-toggle ml-auto"><span></span><span></span><span></span></button>
+                                </div>
+                                <div class="navbar__body">
+                                    <nav class="h-user"><a class="h-user__toggle" href="#!">
+                                            <div class="h-user__avatar"><img src="./images/avatar.png" alt="" /></div><span class="h-user__name mr-3">HIMEPA</span><i class="fa fa-2x fa-angle-down ml-auto"></i>
+                                        </a>
+                                        <div class="h-user__dropdown"><a class="h-user__item" href="#!"><i class="fa fa-user fa-fw mr-2"></i>Profile</a><a class="h-user__item" href="#!"><i class="fa fa-power-off fa-fw mr-2"></i>Log out</a></div>
+                                    </nav>
+                                    <ul class="h-nav">
+                                        <li class="h-nav__item"><a class="h-nav__link" href="#!"><img src="./images/icon-comment.png" alt="" />
+                                                <div class="h-nav__text">Comments</div>
+                                            </a>
+                                            <div class="h-nav__menu"><a class="h-notification media" href="#!">
+                                                    <div class="media-body">
+                                                        <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                                        <div class="h-notification__time">23/06/2020</div>
+                                                    </div>
+                                                </a><a class="h-notification media" href="#!">
+                                                    <div class="media-body">
+                                                        <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                                        <div class="h-notification__time">23/06/2020</div>
+                                                    </div>
+                                                </a><a class="h-notification media" href="#!">
+                                                    <div class="media-body">
+                                                        <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                                        <div class="h-notification__time">23/06/2020</div>
+                                                    </div>
+                                                </a><a class="h-notification media" href="#!">
+                                                    <div class="media-body">
+                                                        <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                                        <div class="h-notification__time">23/06/2020</div>
+                                                    </div>
+                                                </a><a class="h-nav__viewall" href="./account-notification.html">Xem tất cả bình luận</a>
+                                            </div>
+                                        </li>
+                                        <li class="h-nav__item"><a class="h-nav__link" href="#!"><img src="./images/icon-bell.png" alt="" />
+                                                <div class="h-nav__text">Notifications</div><span class="h-nav__num">4</span>
+                                            </a>
+                                            <div class="h-nav__menu"><a class="h-notification media" href="#!">
+                                                    <div class="media-body">
+                                                        <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                                        <div class="h-notification__time">23/06/2020</div>
+                                                    </div>
+                                                </a><a class="h-notification media" href="#!">
+                                                    <div class="media-body">
+                                                        <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                                        <div class="h-notification__time">23/06/2020</div>
+                                                    </div>
+                                                </a><a class="h-notification media" href="#!">
+                                                    <div class="media-body">
+                                                        <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                                        <div class="h-notification__time">23/06/2020</div>
+                                                    </div>
+                                                </a><a class="h-notification media" href="#!">
+                                                    <div class="media-body">
+                                                        <div class="h-notification__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut exercitationem, assumenda iusto esse eius laboriosam dolores deleniti recusandae corrupti aliquid quo, a blanditiis explicabo voluptatibus illo provident aliquam suscipit.</div>
+                                                        <div class="h-notification__time">23/06/2020</div>
+                                                    </div>
+                                                </a><a class="h-nav__viewall" href="./account-notification.html">Xem tất cả thông báo</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="menu">
+                                        <li class="menu-item"><a class="menu-link active" href="#!"><img src="./images/icon-home.png" alt="" /><span class="menu-text">ダッシュボード</span></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="./result.html"><img src="./images/icon-bar-chart.png" alt="" /><span class="menu-text">解析結果</span></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="./file.html"><img src="./images/icon-download.png" alt="" /><span class="menu-text">ファイル管理</span><span class="menu-number">16</span></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="./keywords.html"><img src="./images/icon-file-text.png" alt="" /><span class="menu-text">キーワード管理</span></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-comment.png" alt="" /><span class="menu-text">メッセージ</span></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-help.png" alt="" /><span class="menu-text">ヘルプ</span></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-cog.png" alt="" /><span class="menu-text">設定</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <button class="navbar-toggle d-lg-none js-navbar-toggle ml-20"><span></span><span></span><span></span></button>
+                    </div>
+                </div>
+            </header>
+            <div class="page__main">
+                <div class="page__sidebar"></div>
+                <div class="page__content">
+                    <!-- main content-->
+                    <!-- page header-->
+                    <div class="page__header">
+                        <div class="page__title">メッセージ</div>
+                        <div class="page__elements">
+                            <div class="calendar-type btn-group mr-sm-20 mb-10 mb-sm-0"><a class="btn" href="#!">Days</a><a class="btn" href="#!">Weeks</a><a class="btn active" href="#!">Months</a></div>
+                            <label class="m-datepicker"><img src="./images/icon-calendar.png" alt="" />
+                                <input class="js-daterangepicker" type="text" value="" size="1" />
+                            </label>
+                        </div>
+                    </div>
+                    <section class="message">
+                        <div class="message__sidebar">
+                            <form class="message__search input-group" action="#!">
+                                <div class="input-group-prepend">
+                                    <button class="input-group-text"><i class="fa fa-search"></i></button>
+                                </div>
+                                <input class="form-control" type="text" placeholder="名前・タイトルなどを入力">
+                            </form>
+                            <div class="message__sidebar-body">
+                                <div class="message__contacts custom-scrollbar">
+                                    <!-- Remove class js-chatbox-open to execute before chatbox show (on mobile)-->
+                                    <div class="m-contact media js-chatbox-open active">
+                                        <div class="m-contact__avatar"><img src="https://pavatar.qom.vn/680" alt="" />
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="m-contact__name">John Mayers</div>
+                                            <div class="m-contact__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum consequatur eius modi odio aliquam, fugit optio. Eaque id quibusdam quos maxime debitis! Laboriosam a eligendi facere. Libero blanditiis incidunt tenetur.</div>
+                                        </div>
+                                        <div class="m-contact__time">3 min ago</div>
+                                    </div>
+                                    <!-- Remove class js-chatbox-open to execute before chatbox show (on mobile)-->
+                                    <div class="m-contact media js-chatbox-open">
+                                        <div class="m-contact__avatar"><img src="https://pavatar.qom.vn/698" alt="" />
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="m-contact__name">John Mayers</div>
+                                            <div class="m-contact__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum consequatur eius modi odio aliquam, fugit optio. Eaque id quibusdam quos maxime debitis! Laboriosam a eligendi facere. Libero blanditiis incidunt tenetur.</div>
+                                        </div>
+                                        <div class="m-contact__time">3 min ago</div>
+                                    </div>
+                                    <!-- Remove class js-chatbox-open to execute before chatbox show (on mobile)-->
+                                    <div class="m-contact media js-chatbox-open">
+                                        <div class="m-contact__avatar"><img src="https://pavatar.qom.vn/686" alt="" />
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="m-contact__name">John Mayers</div>
+                                            <div class="m-contact__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum consequatur eius modi odio aliquam, fugit optio. Eaque id quibusdam quos maxime debitis! Laboriosam a eligendi facere. Libero blanditiis incidunt tenetur.</div>
+                                        </div>
+                                        <div class="m-contact__time">3 min ago</div>
+                                    </div>
+                                    <!-- Remove class js-chatbox-open to execute before chatbox show (on mobile)-->
+                                    <div class="m-contact media js-chatbox-open">
+                                        <div class="m-contact__avatar"><img src="https://pavatar.qom.vn/693" alt="" />
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="m-contact__name">John Mayers</div>
+                                            <div class="m-contact__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum consequatur eius modi odio aliquam, fugit optio. Eaque id quibusdam quos maxime debitis! Laboriosam a eligendi facere. Libero blanditiis incidunt tenetur.</div>
+                                        </div>
+                                        <div class="m-contact__time">3 min ago</div>
+                                    </div>
+                                    <!-- Remove class js-chatbox-open to execute before chatbox show (on mobile)-->
+                                    <div class="m-contact media js-chatbox-open">
+                                        <div class="m-contact__avatar"><img src="https://pavatar.qom.vn/683" alt="" />
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="m-contact__name">John Mayers</div>
+                                            <div class="m-contact__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum consequatur eius modi odio aliquam, fugit optio. Eaque id quibusdam quos maxime debitis! Laboriosam a eligendi facere. Libero blanditiis incidunt tenetur.</div>
+                                        </div>
+                                        <div class="m-contact__time">3 min ago</div>
+                                    </div>
+                                    <!-- Remove class js-chatbox-open to execute before chatbox show (on mobile)-->
+                                    <div class="m-contact media js-chatbox-open">
+                                        <div class="m-contact__avatar"><img src="https://pavatar.qom.vn/636" alt="" />
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="m-contact__name">John Mayers</div>
+                                            <div class="m-contact__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum consequatur eius modi odio aliquam, fugit optio. Eaque id quibusdam quos maxime debitis! Laboriosam a eligendi facere. Libero blanditiis incidunt tenetur.</div>
+                                        </div>
+                                        <div class="m-contact__time">3 min ago</div>
+                                    </div>
+                                    <!-- Remove class js-chatbox-open to execute before chatbox show (on mobile)-->
+                                    <div class="m-contact media js-chatbox-open">
+                                        <div class="m-contact__avatar"><img src="https://pavatar.qom.vn/669" alt="" />
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="m-contact__name">John Mayers</div>
+                                            <div class="m-contact__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum consequatur eius modi odio aliquam, fugit optio. Eaque id quibusdam quos maxime debitis! Laboriosam a eligendi facere. Libero blanditiis incidunt tenetur.</div>
+                                        </div>
+                                        <div class="m-contact__time">3 min ago</div>
+                                    </div>
+                                    <!-- Remove class js-chatbox-open to execute before chatbox show (on mobile)-->
+                                    <div class="m-contact media js-chatbox-open">
+                                        <div class="m-contact__avatar"><img src="https://pavatar.qom.vn/643" alt="" />
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="m-contact__name">John Mayers</div>
+                                            <div class="m-contact__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum consequatur eius modi odio aliquam, fugit optio. Eaque id quibusdam quos maxime debitis! Laboriosam a eligendi facere. Libero blanditiis incidunt tenetur.</div>
+                                        </div>
+                                        <div class="m-contact__time">3 min ago</div>
+                                    </div>
+                                    <!-- Remove class js-chatbox-open to execute before chatbox show (on mobile)-->
+                                    <div class="m-contact media js-chatbox-open">
+                                        <div class="m-contact__avatar"><img src="https://pavatar.qom.vn/686" alt="" />
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="m-contact__name">John Mayers</div>
+                                            <div class="m-contact__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum consequatur eius modi odio aliquam, fugit optio. Eaque id quibusdam quos maxime debitis! Laboriosam a eligendi facere. Libero blanditiis incidunt tenetur.</div>
+                                        </div>
+                                        <div class="m-contact__time">3 min ago</div>
+                                    </div>
+                                    <!-- Remove class js-chatbox-open to execute before chatbox show (on mobile)-->
+                                    <div class="m-contact media js-chatbox-open">
+                                        <div class="m-contact__avatar"><img src="https://pavatar.qom.vn/618" alt="" />
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="m-contact__name">John Mayers</div>
+                                            <div class="m-contact__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum consequatur eius modi odio aliquam, fugit optio. Eaque id quibusdam quos maxime debitis! Laboriosam a eligendi facere. Libero blanditiis incidunt tenetur.</div>
+                                        </div>
+                                        <div class="m-contact__time">3 min ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message__main">
+                            <div class="chatbox js-chatbox">
+                                <div class="chatbox__wrapper">
+                                    <div class="chatbox__header media align-items-center">
+                                        <div class="chatbox__avatar"><img src="https://pavatar.qom.vn/612" alt="" /><span class="chatbox__state"></span>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="chatbox__name">John Mayers</div>
+                                            <div class="chatbox__subname">Account Manager</div>
+                                        </div>
+                                        <button class="chatbox__close js-chatbox-close" type="button"></button>
+                                    </div>
+                                    <div class="chatbox__body custom-scrollbar">
+                                        <div class="chat media">
+                                            <div class="chat__avatar"><img src="https://placeimg.qom.vn/620/420/avartar" alt="" />
+                                            </div>
+                                            <div class="chat__texts media-body">
+                                                <div class="chat__text">Not sure if i will have access to the computer</div>
+                                                <div class="chat__text">Not right now. Soon though!</div>
+                                                <div class="chat__time">9:45 AM</div>
+                                            </div>
+                                        </div>
+                                        <div class="chat chat--self media">
+                                            <div class="chat__texts media-body">
+                                                <div class="chat__text">Ok let me know when you're onlline</div>
+                                                <div class="chat__text">And I'll get back to you.</div>
+                                                <div class="chat__time">10:23 AM</div>
+                                            </div>
+                                        </div>
+                                        <div class="chatbox__devider">Today</div>
+                                        <div class="chat media">
+                                            <div class="chat__avatar"><img src="https://placeimg.qom.vn/630/430/avartar" alt="" />
+                                            </div>
+                                            <div class="chat__texts media-body">
+                                                <div class="chat__text">Back in business. Look, we're working so hard that we finished 2 weeks earlier</div>
+                                                <div class="chat__time">9:22 AM</div>
+                                            </div>
+                                        </div>
+                                        <div class="chat chat--self media">
+                                            <div class="chat__texts media-body">
+                                                <div class="chat__text">Really? That was very fast. So, as we talked previously, I've received the project details</div>
+                                                <div class="chat__text">We can go ahead as planned.</div>
+                                                <div class="chat__time">8:43 AM</div>
+                                            </div>
+                                        </div>
+                                        <div class="chat media">
+                                            <div class="chat__avatar"><img src="https://placeimg.qom.vn/630/430/avartar" alt="" />
+                                            </div>
+                                            <div class="chat__texts media-body">
+                                                <div class="chat__text">Okay. I'll notify the rest of the team that we synchronize. We'll update the design.</div>
+                                                <div class="chat__time">9:22 AM</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form class="chatbox__footer media">
+                                        <div class="media-body">
+                                            <textarea class="form-control" rows="3" placeholder="ここにメッセージを入力します。"></textarea>
+                                        </div>
+                                        <button class="chatbox__btn" type="submit"><i class="fa fa-paper-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="footer__wrapper"><a class="footer__btn active" href="#!"><img src="./images/icon-home-light.png" alt="" /></a><a class="footer__btn" href="#!"><img src="./images/icon-bar-chart-light.png" alt="" /></a><a class="footer__btn" href="#!"><img src="./images/icon-file-text-light.png" alt="" /></a><a class="footer__btn" href="#!"><img src="./images/icon-download-light.png" alt="" /></a></div>
+            </footer>
+        </div>
+    </body>
+</html>

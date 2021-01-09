@@ -103,6 +103,27 @@
       padding: 6px 12px;
     }
   }
+
+  @media (max-width: 991px) {
+    &__toggle {
+      width: 24px;
+      height: 24px;
+
+      span {
+        width: 3px;
+        height: 3px;
+
+        &:not(:last-child) {
+          margin-bottom: 2px;
+        }
+      }
+    }
+
+    &__menu {
+      right: -4px;
+      top: calc(100% + 8px);
+    }
+  }
 }
 
 .card-1 {

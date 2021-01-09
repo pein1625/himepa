@@ -261,6 +261,48 @@ $(function () {
   });
 });
 
+$(function () {
+  $(".js-avatar-input").change(function () {
+    var input = this;
+
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        $(".js-avatar-preview").attr("src", e.target.result);
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  });
+});
+
+// Chat box
+$(function () {
+  scrollChatBoxToBottom();
+
+  $(".js-chatbox-open").on("click", function () {
+    if ($(window).width() > 767) return;
+
+    $("html, body").addClass("overflow-hidden");
+
+    $(".js-chatbox").addClass("show");
+
+    scrollChatBoxToBottom();
+  });
+
+  $(".js-chatbox-close").on("click", function () {
+    $(".js-chatbox").removeClass("show");
+    $("html, body").removeClass("overflow-hidden");
+  });
+});
+
+function scrollChatBoxToBottom() {
+  $(".chatbox__body").each(function () {
+    this.scrollTop = this.scrollHeight;
+  });
+}
+
 // menu toggle
 
 $(function () {
@@ -324,5 +366,17 @@ $(function () {
     e.preventDefault();
 
     $(".sticky-btns").toggleClass("active");
+  });
+});
+
+// n-select
+$(function () {
+  $(".n-select__field").on("click", "span", function (e) {
+    e.stopPropagation();
+    $(this).parent().siblings(".n-select__dropdown").fadeToggle();
+  });
+
+  $("html, body").on("click", function () {
+    $(".n-select__dropdown").fadeOut();
   });
 });

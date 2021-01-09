@@ -33,7 +33,12 @@
 @import "modules/navbar";
 @import "modules/section";
 @import "modules/header";
+@import "modules/footer";
 @import "modules/pagination";
+@import "modules/form";
+@import "modules/button";
 
 // pages (override or individual styles)
 @import "pages/index";
+@import "pages/upgrade";
+@import "pages/message";
