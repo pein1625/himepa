@@ -288,9 +288,10 @@
   @media (max-width: 767px) {
     display: none;
     width: 100vw;
-    height: calc(100vh - 120px);
+    height: 100vh;
+    height: -webkit-fill-available;
+    padding-bottom: 120px;
     background-color: $white;
-    border-bottom: 1px solid $border-color;
     position: fixed;
     z-index: 2000;
     top: 60px;
@@ -308,6 +309,10 @@
 
     &__header {
       padding: 8px 20px;
+    }
+    
+    &__footer {
+      border-bottom: 1px solid $border-color;
     }
 
     &__avatar {
